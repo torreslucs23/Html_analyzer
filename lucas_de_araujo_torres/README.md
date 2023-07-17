@@ -1,15 +1,15 @@
-# Tech Test: Software Development Intern
+# HTml Analyzer
 
 # index
 
 * [index](#index)
 * [description](#description)
 * [funcionalities](#funcionalities)
-* [contributors](#contributors)
+
 
 
 # Description
-This project is a Test job provide by Axur. Its main purpose is, given a url of a website, to return the deepest text of the html code. If it has 2 or more texts in the same level, that will return the first occurrence.<br>
+Its main purpose is, given a url of a website, to return the deepest text of the html code. If it has 2 or more texts in the same level, that will return the first occurrence.<br>
 The html's code its divided in lines, where each can be an open tag(Ex: div, h1, etc), a close tag (Ex: /div, /h2, etc), or a text. The codes also doesn't have non-closing tags, like the br tag.<br>
 We need to inform a message: “malformed HTML”, if the HTML is not made correctly, or a message: “URL connection error“, if it has some connection failure.<br>
 This project was made with Java.
@@ -21,5 +21,3 @@ This project was made with Java.
 - The <b>getDeeperText</b> method will work like this: It will create a stack and two arrays: one saves the level of the texts of the HTML code, and the another saves the text's in String. We stack up the elements in the stack. If the stack receives a colse HTML tag, we unstack the elements again until we find the same tag, but opening. In this process, we need to save the text and it's level depth in the two arrays created.<br>
 - Finally, with the two arrays ready, we can get the first most deeper element in the method <b>getFirstMostDeeperText</b>. This returns the result of the problem.
 
-# Contributors
-This project was made for <b>Lucas Torres</b>, a student of Computer Science at the Universidade Federal do Ceará.
